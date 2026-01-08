@@ -92,9 +92,15 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 ![Hosts](https://github.com/Stvrrow/hw-02/blob/main/img/img2.png)
 
-2. Cкриншот лога zabbix agent, где видно, что он работает с сервером
+2. Лог файл zabbix_agentd.log не отображает информацию к какому серверу подключился zabbix agent. Сервер отображается в логах, когда агент не может к нему подключиться. Ниже представлены скриншоты лога после перезагрузки службы zabbix-agent, заполненных данных из файла конфигурации zabbix_agentd.conf и доступность агента в админке zabbix server.
 
-![Лог zabbix agent](https://github.com/Stvrrow/hw-02/blob/main/img/img3.png)
+![Лог zabbix agent](https://github.com/Stvrrow/hw-02/blob/main/img/img6.png)
+
+![Файл конфигурации zabbix agent](https://github.com/Stvrrow/hw-02/blob/main/img/img7.png)
+
+![Доступность агента](https://github.com/Stvrrow/hw-02/blob/main/img/img3.png)
+
+
 
 3. Скриншоты раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 
